@@ -28,36 +28,42 @@ const About: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-golden dark:bg-dark-golden mx-auto"></div>
           <p className="text-lg text-gray-600 dark:text-silver max-w-2xl mx-auto mt-8">
-            I am a mid-level Product Owner & Frontend Specialist with over two
-            years of hands-on experience in a dynamic startup environment. My
-            expertise spans React, Tailwind CSS, Git, Figma, and cutting-edge
-            AI-powered tools for design, development, and process optimization.
+            With over two years in a fast-paced startup environment, I bridge
+            technical expertise and strategic thinking. Leading projects from
+            concept to launch while aligning product vision with business goals.
+            I specialize in React, Tailwind CSS, and modern UI/UX design,
+            supported by strong skills in cloud architectures, AI-driven
+            development, and performance optimization.
           </p>
           <p className="text-lg text-gray-600 dark:text-silver max-w-2xl mx-auto mt-4">
-            I combine UI/UX design excellence with strategic product thinking,
-            delivering seamless user experiences while managing timelines,
-            coordinating stakeholders, and iterating rapidly on feedback.
+            I thrive on transforming complex ideas into tangible & intuitive
+            solutions, leveraging AI as a core enabler to accelerate delivery,
+            improve decision-making, and unlock innovative solutions. My
+            background in the retail industry sharpens my understanding of user
+            behavior and market dynamics, allowing me to deliver products that
+            are both user-focused and business-driven.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Description */}
+          {/* Left Column - Key Strengths */}
           <div>
-            <div
-              className="text-gray-600 dark:text-silver leading-relaxed"
-              dangerouslySetInnerHTML={{
-                __html: t("about.description2"),
-              }}
-            />
-
-            <div className="flex flex-wrap gap-4 pt-4">
-              {technologies.map((tech) => (
-                <Chip key={tech}>{tech}</Chip>
-              ))}
-            </div>
+            <h3 className="text-2xl font-bold text-blue dark:text-white mb-4">
+              Key Strengths
+            </h3>
+            <ul className="list-disc list-inside text-gray-600 dark:text-silver space-y-2">
+              <li>Full-cycle product development—from concept to launch</li>
+              <li>
+                Cloud expertise: AWS, Google Cloud, and serverless architectures
+              </li>
+              <li>AI integration & prompt engineering for rapid innovation</li>
+              <li>Small team leadership & stakeholder communication</li>
+              <li>Strategic product planning & feature roadmapping</li>
+              <li>Macroeconomics & business strategy for market alignment</li>
+            </ul>
           </div>
 
-          {/* Right Column - Skills Cards */}
+          {/* Right Column - Icon Cards */}
           <div className="relative">
             <div className="bg-gradient-to-br from-golden to-carmin dark:from-dark-golden dark:to-dark-carmin p-1 rounded-xl">
               <div className="bg-white dark:bg-dark-blue rounded-xl p-8">
@@ -68,10 +74,11 @@ const About: React.FC = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-blue dark:text-white">
-                        <TranslatedText translationKey="about.focus" />
+                        Modern Frontend Development
                       </h3>
                       <p className="text-gray-600 dark:text-silver">
-                        <TranslatedText translationKey="about.focus.desc" />
+                        Building responsive, accessible, and high-performance
+                        web applications.
                       </p>
                     </div>
                   </div>
@@ -82,10 +89,10 @@ const About: React.FC = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-blue dark:text-white">
-                        <TranslatedText translationKey="about.performance" />
+                        Performance Optimization
                       </h3>
                       <p className="text-gray-600 dark:text-silver">
-                        <TranslatedText translationKey="about.performance.desc" />
+                        Ensuring fast load times and smooth user experiences.
                       </p>
                     </div>
                   </div>
@@ -96,10 +103,11 @@ const About: React.FC = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-blue dark:text-white">
-                        <TranslatedText translationKey="about.design" />
+                        UX/UI Excellence
                       </h3>
                       <p className="text-gray-600 dark:text-silver">
-                        <TranslatedText translationKey="about.design.desc" />
+                        Crafting intuitive and visually appealing user
+                        interfaces.
                       </p>
                     </div>
                   </div>
@@ -110,10 +118,11 @@ const About: React.FC = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-blue dark:text-white">
-                        <TranslatedText translationKey="about.maintenance" />
+                        Sustainable Development
                       </h3>
                       <p className="text-gray-600 dark:text-silver">
-                        <TranslatedText translationKey="about.maintenance.desc" />
+                        Building scalable and maintainable solutions for the
+                        long term.
                       </p>
                     </div>
                   </div>

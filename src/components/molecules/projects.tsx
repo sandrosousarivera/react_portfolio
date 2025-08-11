@@ -27,8 +27,9 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    titleKey: "project.ecommerce.title",
-    descriptionKey: "project.ecommerce.desc",
+    titleKey: "E-commerce Platform",
+    descriptionKey:
+      "Built a scalable e-commerce platform featuring shopping cart, secure payments, and an admin dashboard. Optimized checkout flow and improved load times, resulting in a measurable increase in conversion rates.",
     technologies: ["React", "JavaScript", "Tailwind CSS", "Node.js", "MongoDB"],
     icon: <ShoppingCart size={32} />,
     liveUrl: "#",
@@ -36,8 +37,9 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    titleKey: "project.task.title",
-    descriptionKey: "project.task.desc",
+    titleKey: "Task Management App",
+    descriptionKey:
+      "Developed a task management application with real-time collaboration, drag-and-drop functionality, and seamless integration with popular calendar apps. Enhanced team productivity by providing a clear overview of tasks and deadlines.",
     technologies: ["React", "JavaScript", "Tailwind CSS", "Firebase"],
     icon: <CheckSquare size={32} />,
     liveUrl: "#",
@@ -45,8 +47,9 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    titleKey: "project.weather.title",
-    descriptionKey: "project.weather.desc",
+    titleKey: "Weather Dashboard",
+    descriptionKey:
+      "Created a weather dashboard that provides real-time weather updates, forecasts, and severe weather alerts. Integrated with the OpenWeather API and utilized Chart.js for visualizing weather patterns.",
     technologies: ["React", "JavaScript", "OpenWeather API", "Chart.js"],
     icon: <Cloud size={32} />,
     liveUrl: "#",
@@ -54,8 +57,9 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    titleKey: "project.portfolio.title",
-    descriptionKey: "project.portfolio.desc",
+    titleKey: "Portfolio Website",
+    descriptionKey:
+      "Designed and developed a personal portfolio website to showcase my projects, skills, and experience. Implemented a blog section for sharing insights and tutorials. Focused on performance optimization and SEO best practices.",
     technologies: ["React", "TypeScript", "Tailwind CSS"],
     icon: <Briefcase size={32} />,
     liveUrl: "#",
@@ -63,8 +67,9 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    titleKey: "project.social.title",
-    descriptionKey: "project.social.desc",
+    titleKey: "Social Media Dashboard",
+    descriptionKey:
+      "Built a social media dashboard for tracking engagement, follower growth, and post performance across multiple platforms. Enabled data-driven decision-making for social media strategies.",
     technologies: ["React", "Node.js", "PostgreSQL", "Chart.js"],
     icon: <BarChart3 size={32} />,
     liveUrl: "#",
@@ -72,8 +77,9 @@ const projects: Project[] = [
   },
   {
     id: 6,
-    titleKey: "project.recipe.title",
-    descriptionKey: "project.recipe.desc",
+    titleKey: "Recipe Finder App",
+    descriptionKey:
+      "Developed a recipe finder application that allows users to search for recipes based on ingredients, dietary restrictions, and cooking time. Integrated the Spoonacular API and implemented PWA features for offline access.",
     technologies: ["React", "JavaScript", "Spoonacular API", "PWA"],
     icon: <ChefHat size={32} />,
     liveUrl: "#",
