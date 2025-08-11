@@ -71,7 +71,11 @@ const Skills: React.FC = () => {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {technologies.slice(0, 10).map((tech) => (
-                <SkillCard key={tech.name} name={tech.name} level={tech.level} />
+                <SkillCard
+                  key={tech.name}
+                  name={tech.name}
+                  level={tech.level}
+                />
               ))}
             </div>
           </div>
@@ -81,7 +85,11 @@ const Skills: React.FC = () => {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {technologies.slice(10, 14).map((tech) => (
-                <SkillCard key={tech.name} name={tech.name} level={tech.level} />
+                <SkillCard
+                  key={tech.name}
+                  name={tech.name}
+                  level={tech.level}
+                />
               ))}
             </div>
           </div>
@@ -91,7 +99,11 @@ const Skills: React.FC = () => {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {technologies.slice(14, 18).map((tech) => (
-                <SkillCard key={tech.name} name={tech.name} level={tech.level} />
+                <SkillCard
+                  key={tech.name}
+                  name={tech.name}
+                  level={tech.level}
+                />
               ))}
             </div>
           </div>
@@ -101,7 +113,11 @@ const Skills: React.FC = () => {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {technologies.slice(18, 21).map((tech) => (
-                <SkillCard key={tech.name} name={tech.name} level={tech.level} />
+                <SkillCard
+                  key={tech.name}
+                  name={tech.name}
+                  level={tech.level}
+                />
               ))}
             </div>
           </div>
@@ -111,7 +127,11 @@ const Skills: React.FC = () => {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {technologies.slice(21).map((tech) => (
-                <SkillCard key={tech.name} name={tech.name} level={tech.level} />
+                <SkillCard
+                  key={tech.name}
+                  name={tech.name}
+                  level={tech.level}
+                />
               ))}
             </div>
           </div>

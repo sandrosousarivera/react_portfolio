@@ -25,7 +25,12 @@ const SkillCard: React.FC<SkillCardProps> = ({
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center space-x-3">
           {icon && (
-            <span className="text-golden dark:text-dark-golden">{icon}</span>
+            <span
+              className="text-golden dark:text-dark-golden"
+              style={{ width: "24px", height: "24px", display: "inline-block" }}
+            >
+              {icon}
+            </span>
           )}
           <span className="font-medium text-blue dark:text-white">{name}</span>
         </div>
