@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
-import { useLanguage } from "../../contexts/LanguageContext";
-import TranslatedText from "../atoms/TranslatedText";
 import Button from "../atoms/Button";
 
 const Contact: React.FC = () => {
-  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -33,11 +30,12 @@ const Contact: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-blue dark:text-white mb-4">
-            <TranslatedText translationKey="contact.title" />
+            Contact
           </h2>
           <div className="w-24 h-1 bg-golden dark:bg-dark-golden mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 dark:text-silver max-w-2xl mx-auto">
-            <TranslatedText translationKey="contact.description" />
+            Have a project in mind? I'd love to hear about it! I'm always
+            available for new opportunities and collaborations.
           </p>
         </div>
 
@@ -46,10 +44,11 @@ const Contact: React.FC = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-blue dark:text-white mb-6">
-                <TranslatedText translationKey="contact.info.title" />
+                Contact Information
               </h3>
               <p className="text-gray-600 dark:text-silver mb-8">
-                <TranslatedText translationKey="contact.info.desc" />
+                You can contact me through any of these means. I respond to all
+                messages within 24 hours.
               </p>
             </div>
 
@@ -59,9 +58,7 @@ const Contact: React.FC = () => {
                   <Mail className="text-white" size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-blue dark:text-white">
-                    <TranslatedText translationKey="contact.email" />
-                  </h4>
+                  <h4 className="font-bold text-blue dark:text-white">Email</h4>
                   <a
                     href="mailto:sandro@example.com"
                     className="text-silver dark:text-dark-silver hover:text-golden dark:hover:text-dark-golden transition-colors duration-300"
@@ -76,9 +73,7 @@ const Contact: React.FC = () => {
                   <Phone className="text-white" size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-blue dark:text-white">
-                    <TranslatedText translationKey="contact.phone" />
-                  </h4>
+                  <h4 className="font-bold text-blue dark:text-white">Phone</h4>
                   <a
                     href="tel:+1234567890"
                     className="text-silver dark:text-dark-silver hover:text-golden dark:hover:text-dark-golden transition-colors duration-300"
@@ -94,10 +89,10 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-blue dark:text-white">
-                    <TranslatedText translationKey="contact.location" />
+                    Location
                   </h4>
                   <p className="text-silver dark:text-dark-silver">
-                    <TranslatedText translationKey="contact.location.value" />
+                    Madrid, Spain
                   </p>
                 </div>
               </div>
@@ -105,7 +100,7 @@ const Contact: React.FC = () => {
 
             <div className="pt-8">
               <h4 className="font-bold text-blue dark:text-white mb-4">
-                <TranslatedText translationKey="contact.follow" />
+                Follow me
               </h4>
               <div className="flex space-x-4">
                 <a
@@ -139,7 +134,7 @@ const Contact: React.FC = () => {
           {/* Formulario */}
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-blue dark:text-white mb-6">
-              <TranslatedText translationKey="contact.form.title" />
+              Send me a message
             </h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -148,7 +143,7 @@ const Contact: React.FC = () => {
                   htmlFor="name"
                   className="block text-sm font-medium text-gray-700 dark:text-silver mb-2"
                 >
-                  <TranslatedText translationKey="contact.form.name" />
+                  Full name
                 </label>
                 <input
                   type="text"
@@ -158,7 +153,7 @@ const Contact: React.FC = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-golden dark:focus:ring-dark-golden focus:border-transparent bg-white dark:bg-gray-700 text-blue dark:text-white"
-                  placeholder={t("contact.form.name.placeholder")}
+                  placeholder="Your name"
                 />
               </div>
 
@@ -167,7 +162,7 @@ const Contact: React.FC = () => {
                   htmlFor="email"
                   className="block text-sm font-medium text-gray-700 dark:text-silver mb-2"
                 >
-                  <TranslatedText translationKey="contact.form.email" />
+                  Email
                 </label>
                 <input
                   type="email"
@@ -177,7 +172,7 @@ const Contact: React.FC = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-golden dark:focus:ring-dark-golden focus:border-transparent bg-white dark:bg-gray-700 text-blue dark:text-white"
-                  placeholder={t("contact.form.email.placeholder")}
+                  placeholder="your@email.com"
                 />
               </div>
 
@@ -186,7 +181,7 @@ const Contact: React.FC = () => {
                   htmlFor="subject"
                   className="block text-sm font-medium text-gray-700 dark:text-silver mb-2"
                 >
-                  <TranslatedText translationKey="contact.form.subject" />
+                  Subject
                 </label>
                 <input
                   type="text"
@@ -196,7 +191,7 @@ const Contact: React.FC = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-golden dark:focus:ring-dark-golden focus:border-transparent bg-white dark:bg-gray-700 text-blue dark:text-white"
-                  placeholder={t("contact.form.subject.placeholder")}
+                  placeholder="How can I help you?"
                 />
               </div>
 
@@ -205,7 +200,7 @@ const Contact: React.FC = () => {
                   htmlFor="message"
                   className="block text-sm font-medium text-gray-700 dark:text-silver mb-2"
                 >
-                  <TranslatedText translationKey="contact.form.message" />
+                  Message
                 </label>
                 <textarea
                   id="message"
@@ -215,12 +210,12 @@ const Contact: React.FC = () => {
                   required
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-golden dark:focus:ring-dark-golden focus:border-transparent bg-white dark:bg-gray-700 text-blue dark:text-white resize-none"
-                  placeholder={t("contact.form.message.placeholder")}
+                  placeholder="Tell me about your project..."
                 />
               </div>
 
               <Button type="submit" variant="primary" className="w-full">
-                <TranslatedText translationKey="contact.form.send" />
+                Send Message
               </Button>
             </form>
           </div>

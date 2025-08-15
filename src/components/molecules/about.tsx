@@ -1,11 +1,9 @@
 import React from "react";
 import { Target, Zap, Palette, Wrench } from "lucide-react";
-import { useLanguage } from "../../contexts/LanguageContext";
-import TranslatedText from "../atoms/TranslatedText";
 import Chip from "../atoms/Chip";
 
 const About: React.FC = () => {
-  const { t } = useLanguage();
+  // translations removed — content is static English
 
   const technologies = [
     "React",

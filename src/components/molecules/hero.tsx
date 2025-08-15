@@ -1,12 +1,8 @@
 import React from "react";
-import { useLanguage } from "../../contexts/LanguageContext";
 import Button from "../atoms/Button";
-import TranslatedText from "../atoms/TranslatedText";
 import profileImg from "../../assets/profile1.jpeg";
 
 const Hero: React.FC = () => {
-  const { t } = useLanguage();
-
   return (
     <section
       id="home"
@@ -25,9 +21,9 @@ const Hero: React.FC = () => {
             Product Owner & Web Developer
           </h1>
           <p className="text-lg text-silver max-w-2xl mx-auto">
-            specializing in high-performance, user-focused applications. I blend
-            frontend excellence in React with strategic product thinking to
-            deliver solutions that drive measurable business growth.
+            specializing in high-performance, user-focused applications. Trying
+            to blend frontend excellence in React with strategic product
+            thinking to deliver solutions that drive measurable business growth.
           </p>
           <div className="mt-8">
             <Button href="#contact" className="bg-golden text-white">

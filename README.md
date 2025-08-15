@@ -9,11 +9,8 @@ Previously, I built my portfolio using **Vanilla JavaScript**, HTML5, and CSS, b
 - **Light/Dark Mode Toggle** 💡 / 🕶️  
   Switch between light and dark themes.
 
-- **Language Toggle** 🇬🇧 / 🇪🇸  
-  Seamlessly switch between English and Spanish.
-
-- **Navigation Menu** 🧭  
-  Easy-to-use navigation for smooth site browsing.
+**Navigation Menu** 🧭  
+Easy-to-use navigation for smooth site browsing.
 
 - **Smooth Transitions and Animations** ✨  
   Enjoy a modern, interactive user experience with smooth transitions and animations.

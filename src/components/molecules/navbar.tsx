@@ -1,12 +1,10 @@
 // components/Navbar.tsx
 import React, { useState, useEffect } from "react";
-import { useLanguage } from "../../contexts/LanguageContext";
 import LightIcon from "../../assets/light.svg";
 import DarkIcon from "../../assets/dark.svg";
 
 const Navbar: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
-  const { language, setLanguage } = useLanguage();
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -32,10 +30,6 @@ const Navbar: React.FC = () => {
     localStorage.setItem("theme", newTheme);
   };
 
-  const toggleLanguage = () => {
-    setLanguage(language === "en" ? "es" : "en");
-  };
-
   return (
     <nav className="bg-blue text-white px-6 py-4 dark:bg-dark-blue dark:text-white">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -57,12 +51,6 @@ const Navbar: React.FC = () => {
               className="w-6 h-6"
               style={{ filter: "invert(1)" }}
             />
-          </button>
-          <button
-            onClick={toggleLanguage}
-            className="hover:text-silver dark:hover:text-dark-silver transition"
-          >
-            {language === "en" ? "ES" : "EN"}
           </button>
         </div>
       </div>

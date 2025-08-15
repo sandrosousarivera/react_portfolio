@@ -1,10 +1,9 @@
 import React from "react";
 import { Heart, Github, Linkedin, Twitter } from "lucide-react";
-import { useLanguage } from "../../contexts/LanguageContext";
-import TranslatedText from "../atoms/TranslatedText";
+// translations removed — static English
 
 const Footer: React.FC = () => {
-  const { t } = useLanguage();
+  // language removed
 
   return (
     <footer className="bg-blue dark:bg-dark-blue text-white py-12">
@@ -16,12 +15,11 @@ const Footer: React.FC = () => {
               <div className="w-8 h-8 bg-gradient-to-br from-golden to-carmin dark:from-dark-golden dark:to-dark-carmin rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">S</span>
               </div>
-              <span className="text-xl font-bold">
-                <TranslatedText translationKey="hero.title" />
-              </span>
+              <span className="text-xl font-bold">Sandro</span>
             </div>
             <p className="text-silver dark:text-dark-silver mb-6 max-w-md">
-              <TranslatedText translationKey="footer.description" />
+              Web developer passionate about creating exceptional digital
+              experiences and innovative solutions for the digital world.
             </p>
             <div className="flex space-x-4">
               <a
@@ -53,16 +51,14 @@ const Footer: React.FC = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-4">
-              <TranslatedText translationKey="footer.quickLinks" />
-            </h3>
+            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <a
                   href="#home"
                   className="text-silver dark:text-dark-silver hover:text-golden dark:hover:text-dark-golden transition-colors duration-300"
                 >
-                  <TranslatedText translationKey="nav.home" />
+                  Home
                 </a>
               </li>
               <li>
@@ -70,7 +66,7 @@ const Footer: React.FC = () => {
                   href="#about"
                   className="text-silver dark:text-dark-silver hover:text-golden dark:hover:text-dark-golden transition-colors duration-300"
                 >
-                  <TranslatedText translationKey="nav.about" />
+                  About
                 </a>
               </li>
               <li>
@@ -78,7 +74,7 @@ const Footer: React.FC = () => {
                   href="#projects"
                   className="text-silver dark:text-dark-silver hover:text-golden dark:hover:text-dark-golden transition-colors duration-300"
                 >
-                  <TranslatedText translationKey="nav.projects" />
+                  Projects
                 </a>
               </li>
               <li>
@@ -86,7 +82,7 @@ const Footer: React.FC = () => {
                   href="#skills"
                   className="text-silver dark:text-dark-silver hover:text-golden dark:hover:text-dark-golden transition-colors duration-300"
                 >
-                  <TranslatedText translationKey="nav.skills" />
+                  Skills
                 </a>
               </li>
             </ul>
@@ -94,9 +90,7 @@ const Footer: React.FC = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="text-lg font-bold mb-4">
-              <TranslatedText translationKey="footer.contact" />
-            </h3>
+            <h3 className="text-lg font-bold mb-4">Contact</h3>
             <ul className="space-y-2">
               <li>
                 <a
@@ -115,7 +109,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li className="text-silver dark:text-dark-silver">
-                <TranslatedText translationKey="contact.location.value" />
+                Madrid, Spain
               </li>
             </ul>
           </div>
@@ -124,13 +118,12 @@ const Footer: React.FC = () => {
         <div className="border-t border-silver dark:border-dark-silver pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-silver dark:text-dark-silver text-sm">
-              © 2024 <TranslatedText translationKey="hero.title" />.{" "}
-              <TranslatedText translationKey="footer.rights" />
+              © 2024 Sandro. All rights reserved.
             </p>
             <p className="text-silver dark:text-dark-silver text-sm flex items-center mt-4 md:mt-0">
-              <TranslatedText translationKey="footer.madeWith" />{" "}
+              Made with{" "}
               <Heart className="w-4 h-4 mx-1 text-carmin dark:text-dark-carmin" />{" "}
-              <TranslatedText translationKey="footer.using" />
+              using React & TypeScript
             </p>
           </div>
         </div>

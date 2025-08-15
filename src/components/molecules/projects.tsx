@@ -6,13 +6,8 @@ import {
   Briefcase,
   BarChart3,
   ChefHat,
-  ExternalLink,
-  Github,
 } from "lucide-react";
-import { useLanguage } from "../../contexts/LanguageContext";
-import TranslatedText from "../atoms/TranslatedText";
-import Button from "../atoms/Button";
-import ProjectCard from "./ProjectCard";
+import ImpactStoryCard from "./ImpactStoryCard";
 
 interface Project {
   id: number;
@@ -88,8 +83,6 @@ const projects: Project[] = [
 ];
 
 const Projects: React.FC = () => {
-  const { t } = useLanguage();
-
   return (
     <section id="projects" className="py-20 bg-white dark:bg-dark-blue">
       <div className="max-w-7xl mx-auto px-6">
@@ -103,18 +96,9 @@ const Projects: React.FC = () => {
             projects, showcasing problem-solving and innovation.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              title={t(project.titleKey)}
-              description={t(project.descriptionKey)}
-              technologies={project.technologies}
-              icon={project.icon}
-              liveUrl={project.liveUrl}
-              githubUrl={project.githubUrl}
-            />
-          ))}
+
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+          <ImpactStoryCard />
         </div>
       </div>
     </section>

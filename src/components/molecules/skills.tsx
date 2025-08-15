@@ -1,6 +1,5 @@
 import React from "react";
-import { useLanguage } from "../../contexts/LanguageContext";
-import TranslatedText from "../atoms/TranslatedText";
+// translations removed — content is static English
 import SkillCard from "../atoms/SkillCard";
 
 interface Technology {
@@ -49,8 +48,6 @@ const technologies: Technology[] = [
 ];
 
 const Skills: React.FC = () => {
-  const { t } = useLanguage();
-
   return (
     <section id="skills" className="py-20 bg-gray-50 dark:bg-dark-blue">
       <div className="max-w-7xl mx-auto px-6">
