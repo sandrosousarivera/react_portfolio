@@ -29,17 +29,16 @@ const About: React.FC = () => {
             With over two years in a fast-paced startup environment, I bridge
             technical expertise and strategic thinking—leading projects from
             concept to launch while aligning product vision with business goals.
-            I specialize in React, Tailwind CSS, and modern UI/UX design,
-            supported by strong skills in cloud architectures, AI-driven
-            development, and performance optimization.
           </p>
           <p className="text-lg text-gray-600 dark:text-silver max-w-4xl mx-auto mt-4">
-            I thrive on transforming complex ideas into intuitive,
-            high-performance applications, leveraging AI as a core enabler to
-            accelerate delivery, improve decision-making, and unlock innovative
-            solutions. My background in the retail industry sharpens my
-            understanding of user behavior and market dynamics, allowing me to
-            deliver products that are both user-focused and business-driven.
+            I thrive on transforming complex ideas into intuitive applications,
+            leveraging AI as a core enabler to accelerate delivery, improve
+            decision-making, and unlock innovative solutions.
+            <br />
+            <br />
+            My background in the retail industry sharpens my understanding of
+            user behavior and market dynamics, allowing me to deliver products
+            that are both user-focused and business-driven.
           </p>
         </div>
 
@@ -47,11 +46,11 @@ const About: React.FC = () => {
         <div className="mb-16">
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Key Strengths */}
-            <div>
-              <h3 className="text-2xl font-bold text-blue dark:text-white mb-6 text-center">
+            <div className="flex flex-col items-center">
+              <h3 className="text-2xl font-bold text-blue dark:text-white mb-6">
                 Key Strengths
               </h3>
-              <ul className="space-y-3 text-gray-600 dark:text-silver">
+              <ul className="space-y-3 text-gray-600 dark:text-silver w-full max-w-md">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-golden dark:bg-dark-golden rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   Full-cycle product development, from concept to launch
@@ -62,7 +61,7 @@ const About: React.FC = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-golden dark:bg-dark-golden rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Cloud expertise
+                  Cloud computing experience
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-golden dark:bg-dark-golden rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -72,23 +71,15 @@ const About: React.FC = () => {
                   <span className="w-2 h-2 bg-golden dark:bg-dark-golden rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   Team leadership & stakeholder communication
                 </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-golden dark:bg-dark-golden rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Strategic product planning & feature roadmapping
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-golden dark:bg-dark-golden rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Macroeconomics & business strategy for market alignment
-                </li>
               </ul>
             </div>
 
             {/* Focus Areas */}
-            <div>
-              <h3 className="text-2xl font-bold text-blue dark:text-white mb-6 text-center">
+            <div className="flex flex-col items-center">
+              <h3 className="text-2xl font-bold text-blue dark:text-white mb-6">
                 Focus Areas
               </h3>
-              <ul className="space-y-3 text-gray-600 dark:text-silver">
+              <ul className="space-y-3 text-gray-600 dark:text-silver w-full max-w-xs">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-carmin dark:bg-dark-carmin rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   Modern Frontend Development
