@@ -82,8 +82,6 @@ const Contact: React.FC = () => {
         bodyText: formData.message,
       };
 
-
-
       const response = await axios.post(apiUrl, requestData, {
         headers: {
           "Content-Type": "application/json",
@@ -92,7 +90,7 @@ const Contact: React.FC = () => {
 
       if (response.status === 200) {
         alert("Message successfully sent!!");
-        
+
         // Limpiar formulario
         setFormData({
           name: "",
