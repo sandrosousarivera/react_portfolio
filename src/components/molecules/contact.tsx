@@ -69,21 +69,6 @@ const Contact: React.FC = () => {
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-carmin dark:bg-dark-carmin rounded-xl flex items-center justify-center">
-                  <Phone className="text-white" size={24} />
-                </div>
-                <div>
-                  <h4 className="font-bold text-blue dark:text-white">Phone</h4>
-                  <a
-                    href="tel:+1234567890"
-                    className="text-silver dark:text-dark-silver hover:text-golden dark:hover:text-dark-golden transition-colors duration-300"
-                  >
-                    +1 (234) 567-890
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-bottle dark:bg-dark-bottle rounded-xl flex items-center justify-center">
                   <MapPin className="text-white" size={24} />
                 </div>
@@ -92,7 +77,7 @@ const Contact: React.FC = () => {
                     Location
                   </h4>
                   <p className="text-silver dark:text-dark-silver">
-                    Madrid, Spain
+                    Copenhagen, Denmark.
                   </p>
                 </div>
               </div>
@@ -104,28 +89,12 @@ const Contact: React.FC = () => {
               </h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com/tuusuario"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-blue dark:bg-dark-blue text-white rounded-xl flex items-center justify-center hover:bg-golden dark:hover:bg-dark-golden transition-colors duration-300"
-                >
-                  <Github size={20} />
-                </a>
-                <a
-                  href="https://linkedin.com/in/tuusuario"
+                  href="https://www.linkedin.com/in/sandrosousarivera/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-blue dark:bg-dark-blue text-white rounded-xl flex items-center justify-center hover:bg-golden dark:hover:bg-dark-golden transition-colors duration-300"
                 >
                   <Linkedin size={20} />
-                </a>
-                <a
-                  href="https://twitter.com/tuusuario"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-blue dark:bg-dark-blue text-white rounded-xl flex items-center justify-center hover:bg-golden dark:hover:bg-dark-golden transition-colors duration-300"
-                >
-                  <Twitter size={20} />
                 </a>
               </div>
             </div>

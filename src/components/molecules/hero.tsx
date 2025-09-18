@@ -22,8 +22,8 @@ const Hero: React.FC = () => {
           </h1>
           <p className="text-lg text-silver max-w-2xl mx-auto">
             specializing in high-performance, user-focused applications. Trying
-            to blend frontend excellence in React with strategic product
-            thinking to deliver solutions that drive measurable business growth.
+            to blend frontend excellence with strategic product thinking to
+            deliver solutions that drive measurable business growth.
           </p>
           <div className="mt-8">
             <Button href="#contact" className="bg-golden text-white">
