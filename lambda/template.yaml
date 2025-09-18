@@ -1,0 +1,58 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: Contact Form Lambda Function
+
+Parameters:
+  RecaptchaSecretKey:
+    Type: String
+    Description: reCAPTCHA secret key
+    NoEcho: true
+
+Globals:
+  Function:
+    Timeout: 30
+    MemorySize: 256
+    Environment:
+      Variables:
+        RECAPTCHA_SECRET_KEY: !Ref RecaptchaSecretKey
+
+Resources:
+  ContactFormFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: contact-form-handler-react-portfolio
+      CodeUri: .
+      Handler: index.handler
+      Runtime: nodejs18.x
+      Policies:
+        - AmazonSESFullAccess
+      Events:
+        ApiEvent:
+          Type: Api
+          Properties:
+            Path: /sendEmail
+            Method: post
+            RestApiId: !Ref ContactApi
+
+  ContactApi:
+    Type: AWS::Serverless::Api
+    Properties:
+      Name: contact-form-api-react-portfolio
+      StageName: prod
+      Cors:
+        AllowMethods: "'POST,OPTIONS'"
+        AllowHeaders: "'Content-Type,Authorization'"
+        AllowOrigin: "'https://sandrosousaweb.com,https://www.sandrosousaweb.com,http://localhost:3000'"
+
+Outputs:
+  ApiUrl:
+    Description: "API Gateway endpoint URL"
+    Value: !Sub "https://${ContactApi}.execute-api.${AWS::Region}.amazonaws.com/prod"
+    Export:
+      Name: ContactFormApiUrlReactPortfolio
+
+  ContactApiId:
+    Description: "API Gateway ID"
+    Value: !Ref ContactApi
+    Export:
+      Name: ContactFormApiIdReactPortfolio
